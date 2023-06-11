@@ -1,0 +1,70 @@
+:root {
+  --green: #22a076;
+  --offset: 15px;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  color: #888;
+}
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  font-weight: 300;
+  color: #333;
+}
+h1,
+.h1 {
+  font-size: 55px;
+  margin: 30px 0;
+}
+h2,
+.h2 {
+  font-size: 35px;
+  margin: 20px 0;
+}
+h3,
+.h3 {
+  font-size: 26px;
+  margin: 16px 0;
+}
+strong,
+.strong {
+  font-weight: 400;
+}
+em,
+.em {
+  font-weight: 300;
+  font-style: italic;
+}
+p {
+  font-weight: 300;
+  margin-left: 0;
+}
+.content-text ul {
+  list-style-type: disc;
+  padding-left: 50px;
+}
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 var(--offset) * 2;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 var(--offset) * -1;
+}
+.col {
+  margin: 15px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --offset: 0px;
+  }
+}

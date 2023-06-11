@@ -1,0 +1,150 @@
+.header {
+  box-shadow: 0 10px 14px -4px #eff1f3;
+}
+
+.header-flex {
+  justify-content: space-between;
+}
+
+.header-flex__text {
+  align-self: center;
+}
+
+.header-flex__block-link:hover {
+  color: var(--green);
+  cursor: pointer;
+}
+
+.services-center {
+  text-align: center;
+}
+
+.services-one {
+  color: var(--green);
+}
+
+.services-two {
+  margin-bottom: 20px;
+}
+
+.services-flex__block {
+  width: calc(100% / 3 - var(--offset) * 2);
+}
+
+.work {
+  background-image: url("../img/layer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 70px 0;
+  padding-bottom: 30px;
+}
+
+.work-title {
+  color: rgb(223, 216, 216);
+  text-align: center;
+  padding-top: 20px;
+}
+
+.work-flex__block {
+  width: calc(100% / 2 - var(--offset) * 2);
+}
+
+.work-flex__one {
+  color: var(--green);
+  margin-bottom: 10px;
+}
+
+.testimonials {
+  margin-bottom: 100px;
+}
+
+.testimonials-item {
+  text-align: center;
+}
+
+.testimonials-block {
+  width: calc(100% / 3 - var(--offset) * 2);
+}
+
+.testimonials-block__image {
+  margin-bottom: 30px;
+}
+
+.testimonials-block__name {
+  color: black;
+  font-weight: 600;
+}
+
+.testimonials-block__job {
+  color: var(--green);
+  font-weight: 600;
+}
+
+footer {
+  padding: 20px 0 50px 0;
+}
+.footer-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer-flex__image {
+  margin-right: 20px;
+}
+.footer-flex__adress {
+  margin-right: 10px;
+}
+
+.footer-social span a {
+  margin: 0 10px;
+  color: inherit;
+}
+.footer-social span a:hover {
+  color: var(--green);
+}
+@media screen and (max-width: 880px) {
+  .header {
+    text-align: center;
+  }
+  .header-flex {
+    display: inline-block;
+  }
+
+  .header-flex__block-list {
+    display: block;
+  }
+  .services-flex__block {
+    width: calc(100% / 2 - var(--offset) * 2);
+  }
+  .services-title {
+    font-size: 45px;
+  }
+  .testimonials-item {
+    font-size: 45px;
+  }
+  .testimonials-block {
+    width: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services-flex__block {
+    width: calc(100% / 1 - var(--offset) * 2);
+    text-align: center;
+  }
+  .work-flex__block {
+    width: calc(100% / 1 - var(--offset) * 2);
+  }
+  .testimonials-item {
+    font-size: 35px;
+  }
+  .testimonials-block {
+    width: calc(100% / 1 - var(--offset) * 2);
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer-social {
+    margin-top: 20px;
+  }
+}
